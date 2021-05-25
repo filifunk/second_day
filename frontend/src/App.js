@@ -7,7 +7,7 @@ function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/flask/hello').then(response => {
+    axios.get('https://coming-soon1.herokuapp.com/flask/hello').then(response => {
       console.log("Success", response)
       setGetMessage(response)
     }).catch(error =>{
